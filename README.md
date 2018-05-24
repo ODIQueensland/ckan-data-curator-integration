@@ -1,5 +1,5 @@
-# ckan-data-curator-integration
+# CKAN - Data Curator Integration
 
-A place to plan, collect issues and store items that support integrating [Data Curator](https://github.com/ODIQueensland/data-curator) with CKAN via the [CKANext-datapackager](https://github.com/frictionlessdata/ckanext-datapackager) extension, supported by [ckan-datapackage-tools](https://github.com/frictionlessdata/ckan-datapackage-tools).
+A place to [plan](https://github.com/ODIQueensland/ckan-data-curator-integration/milestones?direction=asc&sort=due_date&state=open), collect [issues](https://github.com/ODIQueensland/ckan-data-curator-integration/issues) and store [documentation](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs) that support integrating [Data Curator](https://github.com/ODIQueensland/data-curator) with [CKAN](https://github.com/ckan/ckan) via the [CKANext-datapackager](https://github.com/frictionlessdata/ckanext-datapackager) extension, supported by [ckan-datapackage-tools](https://github.com/frictionlessdata/ckan-datapackage-tools).
 
-Acceptance tests are published to [Cucumber Pro](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master).
+[Acceptance tests](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/test/features) are published to [Cucumber Pro](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master).
