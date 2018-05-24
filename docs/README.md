@@ -200,7 +200,7 @@ To download a `datapackage.json` file:
 To download a `datapackage.zip`:
 
 1. Using CKAN, go to the dataset page
-2. *to be determined...*
+2. *to be determined... (add a new button?)*
 
 ---
 
@@ -212,10 +212,10 @@ Some new properties need to be included to support tabular data packages.
 
 Create valid data package properties for use in [create.py](https://github.com/frictionlessdata/ckanext-datapackager/blob/master/ckanext/datapackager/logic/action/create.py). In [converter.py](https://github.com/frictionlessdata/ckan-datapackage-tools/blob/master/ckan_datapackage_tools/converter.py#L86) convert the following properties from a data package to a CKAN dataset.
 
-1. `profile` mandatory for tabular data packages
+1. `profile` mandatory for tabular data packages (potentially later in 6.)
 1. `licenses` ([#62](https://github.com/frictionlessdata/ckanext-datapackager/issues/62))
-3. `contributors` ([#59](https://github.com/frictionlessdata/ckanext-datapackager/issues/59)) maps to `author` in CKAN 
-4. `sources` ([#59](https://github.com/frictionlessdata/ckanext-datapackager/issues/59)) maps to `maintainer` in CKAN 
+3. `contributors` - first author ([#59](https://github.com/frictionlessdata/ckanext-datapackager/issues/59)) maps to `author` in CKAN 
+4. `contributors` - first maintainer ([#59](https://github.com/frictionlessdata/ckanext-datapackager/issues/59)) maps to `maintainer` in CKAN 
 
 [See notes](#converting-datasets) below for what metadata is currently lost when converting between CKAN and data packages
 
