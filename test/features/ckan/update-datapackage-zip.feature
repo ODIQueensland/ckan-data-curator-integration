@@ -1,6 +1,6 @@
 @draft
 
-Feature: Update new data package ZIP using CKAN
+Feature: Update data package ZIP using CKAN
   As a Data Publisher  
   I want to update a datapackage.zip file from resources and metadata I've changed in CKAN 
   So that data consumers can download all the latest information in one step
