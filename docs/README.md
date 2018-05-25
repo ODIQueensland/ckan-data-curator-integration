@@ -28,7 +28,11 @@ Assumptions and constraints that influence the instructions for each scenario:
 
 ## Prior work
 
-See: https://github.com/ckan/ideas-and-roadmap/blob/466418227cf4fca9bcc3b5e65d23b3ef117986b5/specs/datapackages/README.md#resource-schemas
+See: 
+
+- [ideas about resource schemas in CKAN](https://github.com/ckan/ideas-and-roadmap/blob/466418227cf4fca9bcc3b5e65d23b3ef117986b5/specs/datapackages/README.md#resource-schemas)
+- [data-packager](https://ckan.org/2014/06/09/the-open-knowledge-data-packager/) - a CKAN extension (2014) for quickly creating and publishing Tabular Data Packages 
+- [ckanext-ckanpackager](http://extensions.ckan.org/extension/ckanpackager/) - A stand-alone service to pack a given CKAN resource in a ZIP file and email the link to a user
 
 ## Scenarios
 
