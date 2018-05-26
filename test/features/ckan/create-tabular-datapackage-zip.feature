@@ -2,7 +2,7 @@
 
 Feature: Create new Tabular Data Package ZIP using CKAN
   As a Data Publisher  
-  I want to create a datapackage.zip file from resources and metadata I've added to CKAN for the first time
+  I want to create a tabular datapackage.zip file from the dataset, resources and metadata I've added to CKAN for the first time
   So that data consumers can download all the information in one step
 
   RULES
