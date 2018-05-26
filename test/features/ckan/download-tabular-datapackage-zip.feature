@@ -11,12 +11,16 @@ Feature: Download new Tabular Data Package ZIP using CKAN
   - The datapackage.zip file should be the same regardless of how that the data is added or changed in CKAN (i.e. via user interface or API)
   - The [Data Package](https://frictionlessdata.io/specs/data-package/) follows v1.0 of the specification
   - The datapackage.zip contains:
-    - a datapackage.json file as produced by [Create new Tabular Data Package JSON using CKAN](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/ckan/create-tabular-datapackage-json.feature) with the exception that:
-      - [data resources](https://frictionlessdata.io/specs/data-resource/) reference files in a `/data` directory rather than being referencing to CKAN URLs
+    - a datapackage.json file as produced by [Create new Tabular Data Package JSON using CKAN](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/ckan/create-tabular-datapackage-json.feature) 
       - in-line [table schemas](https://frictionlessdata.io/specs/table-schema/) 
       - in-line [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/)
-    - optionally, a README.md or README.txt file
-    
+    - optionally, a README.md or README.txt file    
+
+  LATER
+  =====
+  
+  - Given [concerns](https://github.com/frictionlessdata/ckanext-datapackager/issues/52), adding data to the zip as files in a `/data` directory is very difficult
+
   NOTES
   =====
   
