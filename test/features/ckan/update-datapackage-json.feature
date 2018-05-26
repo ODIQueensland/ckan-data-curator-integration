@@ -13,11 +13,11 @@ Feature: Update Data Package JSON using CKAN
   - The datapackage.json contains:
     - [data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata
     - [data resource](https://frictionlessdata.io/specs/data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadata
-    - doesn't include:
-      - [table schemas](https://frictionlessdata.io/specs/table-schema/)
-      - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
-      - non-data resources such as README.md or README.txt files
-    - CKAN metadata properties is mapped to Frictionaless Data Data Package and Data Resouce properties as described in the [Create new Data Package JSON using CKAN](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/ckan/create-datapackage-json.feature)  
+  - The datapackage.json does not contain:
+    - [table schemas](https://frictionlessdata.io/specs/table-schema/)
+    - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
+    - non-data resources such as README.md or README.txt files
+    - CKAN metadata properties is mapped to Frictionless Data Data Package and Data Resouce properties as described in the [Create new Data Package JSON using CKAN](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/ckan/create-datapackage-json.feature)  
 
   QUESTIONS
   =========
