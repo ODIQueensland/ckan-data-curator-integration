@@ -1,8 +1,8 @@
-@draft
+@draft @v0.7.0
 
 Feature: Open a Tabular Data Package ZIP in Data Curator using ZIP from CKAN 
   As a User  
-  I want to open a tabular data package  
+  I want to open a Tabular Data Package  
   So that I can view or edit it edit using Data Curator  
 
   RULES
@@ -31,16 +31,15 @@ Feature: Open a Tabular Data Package ZIP in Data Curator using ZIP from CKAN
       - keywords
       - created
     - data resource:
-      - data
       - hash
       - bytes 
-    - table schema:
-      - bareNumber
-      - groupChar
-      - decimalChar
-      - trueValues
-      - falseValues
     - [pattern properties](https://frictionlessdata.io/specs/patterns) except `package` in the [Table Schema: Foreign Keys to Data Packages pattern](https://frictionlessdata.io/specs/patterns/#table-schema:-foreign-keys-to-data-packages)
+  
+  NOTES
+  =====
+  
+  - This is a specialisation of the Data Curator [open-data-package.feature](https://github.com/ODIQueensland/data-curator/blob/develop/test/features/file/open-datapackage.feature)
+  - when this draft is approved, it should be moved/copied to the Data Curator repository
   
   Scenario: Open a valid datapackage.zip from a URL
     Given Data Curator is open
