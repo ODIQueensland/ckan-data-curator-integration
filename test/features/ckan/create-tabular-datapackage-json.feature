@@ -11,8 +11,8 @@ Feature: Create new Tabular Data Package JSON using CKAN
   - The datapackage.json file should be the same regardless of how that the data is added to CKAN (i.e. via user interface or API)
   - The datapackage.json is a [Tabular Data Package](https://frictionlessdata.io/specs/tabular-data-package/)
   - The datapackage.json contains:
-    - [tabular data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata using the [tabular data package mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#tabular-data-package-mapping)
-    [tabular data resource](https://frictionlessdata.io/specs/tabular-data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadata using the [tabular data resource mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#tabular-data-resource-mapping)
+    - [tabular data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata using the [tabular data package mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#ckan-dataset-to-tabular-data-package-mapping)
+    [tabular data resource](https://frictionlessdata.io/specs/tabular-data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadata using the [tabular data resource mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#ckan-resource-to-tabular-data-resource-mapping)
     - references [tabular data resources](https://frictionlessdata.io/specs/tabular-data-resource/) via a url
     - includes [table schemas](https://frictionlessdata.io/specs/table-schema/) in-line 
     - includes [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 

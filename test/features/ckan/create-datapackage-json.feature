@@ -11,8 +11,8 @@ Feature: Create new Data Package JSON using CKAN
   - The datapackage.json file should be the same regardless of how that the data is added to CKAN (i.e. via user interface or API)
   - The [Data Package](https://frictionlessdata.io/specs/data-package/) follows v1.0 of the specification
   - The datapackage.json contains:
-    - [data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata using the [data package mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#data-package-mapping)
-    - [data resource](https://frictionlessdata.io/specs/data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadatausing the [data resource mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#data-resource-mapping)
+    - [data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata using the [data package mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#ckan-dataset-to-data-package-mapping)
+    - [data resource](https://frictionlessdata.io/specs/data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadatausing the [data resource mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#ckan-resource-to-data-resource-mapping)
   - The datapackage.json does not contain:
     - [table schemas](https://frictionlessdata.io/specs/table-schema/)
     - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
