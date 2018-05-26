@@ -1,5 +1,7 @@
 # Metadata mapping
 
+@todo
+
 ## CKAN to Frictionless Data
 
 ### CKAN Dataset to Data Package mapping
