@@ -1,16 +1,18 @@
-@draft
+@draft @v0.7.0
 
 Feature: Open a Tabular Data Package JSON in Data Curator using a CKAN URL
   As a User  
-  I want to open a tabular data package from a CKAN URL 
+  I want to open a Tabular Data Package from a CKAN URL  
   So that I can view or edit it using Data Curator  
 
   RULES
   =====
 
+  - The [Tabular Data Package](https://frictionlessdata.io/specs/tabular-data-package/) follows v1.0 of the specification
   - The datapackage.json file contains:
-    - references the tabular data resources via a url 
-    - describes the tabular data package and contains the `schema` and `dialect` for each resource, either inline or referenced via a url
+    - describes the tabular data package 
+    - references the [tabular data resources](https://frictionlessdata.io/specs/tabular-data-resource/) via a url 
+    - contains the `schema` and `dialect` for each tabular data resource, either inline or referenced via a url
     - doesn't include or reference a README.md or README.txt  
   
   LATER
@@ -32,11 +34,12 @@ Feature: Open a Tabular Data Package JSON in Data Curator using a CKAN URL
       - hash
       - bytes 
     - [pattern properties](https://frictionlessdata.io/specs/patterns) except `package` in the [Table Schema: Foreign Keys to Data Packages pattern](https://frictionlessdata.io/specs/patterns/#table-schema:-foreign-keys-to-data-packages)
-    
+  
   NOTES
   =====
   
-  - specialisation of Data Curator [open-datapackage.feature](https://github.com/ODIQueensland/data-curator/blob/develop/test/features/file/open-datapackage.feature)
+  - This is a specialisation of the Data Curator [open-datapackage.feature](https://github.com/ODIQueensland/data-curator/blob/develop/test/features/file/open-datapackage.feature)
+  - when this draft is approved, it should be moved/copied to the Data Curator repository
 
   Scenario: Open a valid datapackage.json from a URL
     Given Data Curator is open
@@ -61,4 +64,10 @@ Feature: Open a Tabular Data Package JSON in Data Curator using a CKAN URL
     Given Data Curator is open
     When "Open Data Package" is invoked
     And an invalid datapackage.json file at a URL is selected
+    Then an error message should be displayed 
+    
+  Scenario: datapackage.json URL is invalid
+    Given Data Curator is open
+    When "Open Data Package" is invoked
+    And an invalid URL is provided
     Then an error message should be displayed 
