@@ -1,4 +1,4 @@
-@draft
+@draft @v0.2.0
 
 Feature: Update Data Package JSON using CKAN
   As a Data Publisher  

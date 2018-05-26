@@ -1,4 +1,4 @@
-@draft
+@draft @v0.5.0
 
 Feature: Create new Tabular Data Package ZIP using CKAN
   As a Data Publisher  

@@ -3,7 +3,7 @@
 Acceptance tests for CKAN - Data Curator integration are 
 
 - written using the [Gherkin language](https://cucumber.io/docs/reference#gherkin) 
-- [stored in GitHub](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/test/features).
+- [stored in GitHub](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/test/features)
 - [shared](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master) using [Cucumber Pro](https://cucumber.io/pro) beta 
 
 Writing a test
@@ -48,4 +48,5 @@ Tags
 We use @tags to help organise and search for tests, e.g.
 
 - [@draft](https://app.cucumber.pro/projects/ckan-data-curator-integration/search/branch/master?q=%40draft) tests
+-  @vX.Y.Z for features in a [milestone](https://github.com/ODIQueensland/ckan-data-curator-integration/milestones?direction=asc&sort=due_date&state=open), e.g. [@v0.2.0](https://app.cucumber.pro/projects/ckan-data-curator-integration/search/branch/master?q=%40v0.2.0)
 - [@backlog](https://app.cucumber.pro/projects/ckan-data-curator-integration/search/branch/master?q=%40backlog) for [features not in our release plans](https://github.com/ODIQueensland/ckan-data-curator-integration/milestone/10)

@@ -1,4 +1,4 @@
-@draft
+@draft @v0.4.0
 
 Feature: Update Tabular Data Package JSON using CKAN
   As a Data Publisher  

@@ -1,4 +1,4 @@
-@draft
+@draft @v0.3.0
 
 Feature: Create new Data Package ZIP using CKAN
   As a Data Publisher  
