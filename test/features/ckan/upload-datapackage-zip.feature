@@ -1,7 +1,5 @@
 @draft 
 
-Upload a Data Package ZIP to CKAN
-
 Feature: Upload a Data Package ZIP to CKAN
   As a Data Publisher  
   I want to upload a datapackage.zip to CKAN  
