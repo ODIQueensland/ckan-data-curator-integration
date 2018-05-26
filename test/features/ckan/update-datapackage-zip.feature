@@ -28,7 +28,7 @@ Feature: Update Data Package ZIP using CKAN
   NOTES
   =====
 
-  - In docs, see [Change data in a published data package](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#3-change-data-in-a-published-data-package) and [Download the data package as datapackage.ZIP](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#9-download-the-data-package-as-datapackagezip)
+  - In docs, see [Change data in a published data package](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#3-change-data-in-a-published-data-package)
   
   Scenario: Update data package ZIP after CKAN dataset metadata property change 
     Given a dataset has been published in CKAN

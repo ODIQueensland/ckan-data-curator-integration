@@ -27,7 +27,7 @@ Feature: Create new Data Package ZIP using CKAN
   NOTES
   =====
   
-  - In docs, see [Publish a data package to CKAN for the first time](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#2-publish-a-data-package-to-ckan-for-the-first-time) and [Download the data package as datapackage.ZIP](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#9-download-the-data-package-as-datapackagezip)
+  - In docs, see [Publish a data package to CKAN for the first time](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#2-publish-a-data-package-to-ckan-for-the-first-time)
 
   Scenario: Create new data package ZIP using CKAN
     Given a dataset has been published in CKAN
