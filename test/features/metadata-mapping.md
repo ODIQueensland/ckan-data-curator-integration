@@ -8,10 +8,9 @@
   | ------------------------------ | ------------------------------ | ---------------------------- |
   |                                | name                           |                              |
   |                                | id                             |                              |
-  |                                | licenses name                  |                              |
-  |                                | licenses path                  |                              |
-  |                                | licenses title                 |                              |
-  |                                | profile                        | default value `data-package` |
+  | license extra                  | licenses array                 | use extra if available       |
+  | license_id                     | licenses array                 | construct array              |
+  | profile extra                  | profile                        | use extra if available or default `data-package` |
   |                                | title                          |                              |
   |                                | description                    |                              |
   |                                | homepage                       |                              |
@@ -26,15 +25,13 @@
   |                                | created                        |                              |
   | other metadata                 | not available                  | store?                       |
   
-
-
 ### CKAN Resource to Data Resource mapping
 
   | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
   | ------------------------------- | ------------------------------- | -------------------------------------- |
   |                                 | path                            | the url the ckan resource is stored at |
   |                                 | name                            |                                        |
-  |                                 | profile                         | default value `data-resource`          |
+  | profile extra                   | profile                         | default value `data-resource`          |
   |                                 | title                           |                                        |
   |                                 | description                     |                                        |
   |                                 | format                          |                                        |
@@ -46,7 +43,6 @@
   | not available                   | licenses name                   |                                        |
   | not available                   | licenses path                   |                                        |
   | not available                   | licenses title                  |                                        |
-
 
 ### CKAN Dataset to Tabular Data Package mapping
 
@@ -70,7 +66,6 @@
   |                                | image                                  |                                      |
   |                                | created                                |                                      |
 
-
 ### CKAN Resource to Tabular Data Resource mapping
   
   | CKAN Resource metadata property | Tabular Data Resource metadata property | notes                                  |
@@ -91,7 +86,6 @@
   | not available                   | licenses title                          |                                        |
 
 ## Frictionless Data to CKAN 
-
 
 ### Data Package to CKAN Dataset mapping
 
@@ -116,8 +110,7 @@
 | keywords                       |                                |                                              |
 | image                          |                                |                                              |
 | created                        |                                |                                              |
-                 
-                 
+                            
 ### Data Resource to CKAN Resource mapping
 
   todo
