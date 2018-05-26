@@ -1,8 +1,8 @@
 @draft
 
-Feature: Publish Data Package to CKAN using Data Curator
+Feature: Publish Tabular Data Package ZIP from Data Curator to CKAN 
   As a Data Packager  
-  I want to publish a data package to CKAN using Data Curator 
+  I want to publish a tabular data package to CKAN using Data Curator 
   So that I don't have to upload it manually using CKAN's user interface  
 
   RULES

@@ -1,6 +1,6 @@
 @draft
 
-Feature: Update data package JSON using CKAN
+Feature: Update Data Package JSON using CKAN
   As a Data Publisher  
   I want to update a datapackage.json file from resources and metadata I've changed in CKAN 
   So that data consumers can download all the latest information in one step

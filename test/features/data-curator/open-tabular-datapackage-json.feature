@@ -1,6 +1,6 @@
 @draft
 
-Feature: Open a Data Package JSON in Data Curator using a CKAN URL
+Feature: Open a Tabular Data Package JSON in Data Curator using a CKAN URL
   As a User  
   I want to open a tabular data package from a CKAN URL 
   So that I can view or edit it using Data Curator  

@@ -1,8 +1,8 @@
 @draft
 
-Feature: Create new Data Package JSON using CKAN
+Feature: Create new Tabular Data Package JSON using CKAN
   As a Data Publisher  
-  I want to create a datapackage.json file from resources and metadata I've added to CKAN for the first time
+  I want to create a tabular datapackage.json file from resources and metadata I've added to CKAN for the first time
   So that data consumers can download all the information in one step
 
   RULES
@@ -12,16 +12,17 @@ Feature: Create new Data Package JSON using CKAN
   - The datapackage.json is a [Data Package](https://frictionlessdata.io/specs/data-package/) 
   - The datapackage.json:
     - references [data resources](https://frictionlessdata.io/specs/data-resource/) via a url
-    - converts or derives metadata from CKAN and maps them to properties in the data package
     - doesn't include:
       - [table schemas](https://frictionlessdata.io/specs/table-schema/)
       - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
       - non-data resources such as README.md or README.txt files
 
+
   NOTES
   =====
   
   - In docs, see [Publish a data package to CKAN for the first time](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#2-publish-a-data-package-to-ckan-for-the-first-time) and [Download the data package as datapackage.json](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#8-download-the-data-package-as-datapackagejson)
+  
   
   LATER
   =====

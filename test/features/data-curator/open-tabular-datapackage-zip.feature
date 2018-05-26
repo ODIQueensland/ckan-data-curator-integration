@@ -1,6 +1,6 @@
 @draft
 
-Feature: Open a Data Package Zip
+Feature: Open a Tabular Data Package ZIP in Data Curator using ZIP from CKAN 
   As a User  
   I want to open a tabular data package  
   So that I can view or edit it edit using Data Curator  
