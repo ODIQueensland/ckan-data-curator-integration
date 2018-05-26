@@ -11,56 +11,13 @@ Feature: Create new Data Package JSON using CKAN
   - The datapackage.json file should be the same regardless of how that the data is added to CKAN (i.e. via user interface or API)
   - The [Data Package](https://frictionlessdata.io/specs/data-package/) follows v1.0 of the specification
   - The datapackage.json contains:
-    - [data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata
-    - [data resource](https://frictionlessdata.io/specs/data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadata
+    - [data package](https://frictionlessdata.io/specs/data-package/) metadata properties converted, derived, or defaulted  from the CKAN dataset metadata using the [data package mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#data-package-mapping)
+    - [data resource](https://frictionlessdata.io/specs/data-resource/) metadata properties converted, derived, or defaulted from the CKAN resource metadatausing the [data resource mapping](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/metadata-mapping.md#data-resource-mapping)
   - The datapackage.json does not contain:
     - [table schemas](https://frictionlessdata.io/specs/table-schema/)
     - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
     - non-data resources such as README.md or README.txt files
   
-  Data Package mapping
-  --------------------
-  
-    | CKAN Dataset metadata property | Data Package metadata property | notes                        |
-    | ------------------------------ | ------------------------------ | ---------------------------- |
-    |                                | name                           |                              |
-    |                                | id                             |                              |
-    |                                | licenses name                  |                              |
-    |                                | licenses path                  |                              |
-    |                                | licenses title                 |                              |
-    |                                | profile                        |                              |
-    |                                | title                          | default value `data-package` |
-    |                                | description                    |                              |
-    |                                | homepage                       |                              |
-    | not available                  | sources                        |                              |
-    | author                         | contributors title             |                              |
-    | author                         | contributors role              | default value `author`       |
-    | maintainer                     | contributors title             |                              |
-    | maintainer                     | contributors role              | default value `maintainer`   |
-    |                                | keywords                       |                              |
-    |                                | image                          |                              |
-    |                                | created                        |                              |
-
-  Data Resource mapping
-  ---------------------
-  
-    | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
-    | ------------------------------- | ------------------------------- | -------------------------------------- |
-    |                                 | path                            | the url the ckan resource is stored at |
-    |                                 | name                            |                                        |
-    |                                 | profile                         | default value `data-resource`          |
-    |                                 | title                           |                                        |
-    |                                 | description                     |                                        |
-    |                                 | format                          |                                        |
-    |                                 | mediatype                       |                                        |
-    |                                 | encoding                        |                                        |
-    |                                 | bytes                           |                                        |
-    |                                 | hash                            |                                        |
-    | not available                   | sources                         |                                        |
-    | not available                   | licenses name                   |                                        |
-    | not available                   | licenses path                   |                                        |
-    | not available                   | licenses title                  |                                        |
-
   QUESTIONS
   =========
   
