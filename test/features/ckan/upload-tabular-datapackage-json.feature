@@ -1,4 +1,4 @@
-@draft  @todo
+@draft @v0.4.0 @todo
 
 Feature: Upload a Tabular Data Package JSON to CKAN
   As a Data Publisher  

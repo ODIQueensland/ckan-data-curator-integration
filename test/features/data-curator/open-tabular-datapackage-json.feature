@@ -1,4 +1,4 @@
-@draft @v0.7.0
+@draft @v0.8.0
 
 Feature: Open a Tabular Data Package JSON in Data Curator using a CKAN URL
   As a User  

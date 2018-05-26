@@ -1,4 +1,4 @@
-@draft @v0.5.0 @todo
+@draft @v0.6.0 @todo
 
 Feature: Download new Tabular Data Package ZIP using CKAN
   As a Data Publisher  

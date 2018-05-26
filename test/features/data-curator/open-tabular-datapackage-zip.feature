@@ -1,4 +1,4 @@
-@draft @v0.7.0
+@draft @v0.8.0
 
 Feature: Open a Tabular Data Package ZIP in Data Curator using ZIP from CKAN 
   As a User  

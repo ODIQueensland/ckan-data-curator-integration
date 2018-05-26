@@ -1,4 +1,4 @@
-@draft  @todo
+@draft @v0.3.0 @todo
 
 Feature: Upload a Data Package ZIP to CKAN
   As a Data Publisher  

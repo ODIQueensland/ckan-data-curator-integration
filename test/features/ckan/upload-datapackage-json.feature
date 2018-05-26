@@ -1,4 +1,4 @@
-@draft  @todo
+@draft @v0.2.0 @todo
 
 Feature: Upload a Data Package JSON to CKAN
   As a Data Publisher  

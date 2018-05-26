@@ -1,4 +1,4 @@
-@draft @v0.6.0
+@draft @v0.7.0
 
 Feature: Publish Tabular Data Package ZIP from Data Curator to CKAN 
   As a Data Packager  
