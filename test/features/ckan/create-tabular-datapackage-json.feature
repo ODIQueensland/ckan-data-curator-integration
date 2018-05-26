@@ -18,8 +18,8 @@ Feature: Create new Tabular Data Package JSON using CKAN
     - non-data resources such as README.md or README.txt files
     - non-tabular data resources or associated metadata
   
-  Data Package mapping
-  --------------------
+  Tabular Data Package mapping
+  ----------------------------
   
     | CKAN Dataset metadata property | Tabular Data Package metadata property | notes                                |
     | ------------------------------ | -------------------------------------- | ------------------------------------ |
@@ -41,9 +41,8 @@ Feature: Create new Tabular Data Package JSON using CKAN
     |                                | image                                  |                                      |
     |                                | created                                |                                      |
 
-
-  Data Resource mapping
-  ---------------------
+  Tabular Data Resource mapping
+  -----------------------------
     
     | CKAN Resource metadata property | Tabular Data Resource metadata property | notes                                  |
     | ------------------------------- | --------------------------------------- | -------------------------------------- |
