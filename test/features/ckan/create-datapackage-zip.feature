@@ -11,7 +11,7 @@ Feature: Create new Data Package ZIP using CKAN
   - The datapackage.zip file should be the same regardless of how that the data is added to CKAN (i.e. via user interface or API)
   - The [Data Package](https://frictionlessdata.io/specs/data-package/) follows v1.0 of the specification
   - The datapackage.zip contains:
-    - a datapackage.json file as produced by [Create new Data Package JSON using CKAN](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/ckan/create-datapackage-json.feature) with the exception that [data resources](https://frictionlessdata.io/specs/data-resource/) references files in a `/data` directory rather than being referencing to CKAN URLs
+    - a datapackage.json file as produced by [Create new Data Package JSON using CKAN](https://app.cucumber.pro/projects/ckan-data-curator-integration/documents/branch/master/test/features/ckan/create-datapackage-json.feature) with the exception that [data resources](https://frictionlessdata.io/specs/data-resource/) reference files in a `/data` directory rather than being referencing to CKAN URLs
     - a `/data` directory containing one or more data resources 
     - optionally, a README.md or README.txt file
   - The datapackage.json does not contain:
@@ -33,6 +33,7 @@ Feature: Create new Data Package ZIP using CKAN
   Scenario: Create new data package ZIP with README using CKAN
     Given a dataset has been published in CKAN
     And one or more resources have been published with the dataset
+    And a README.md or README.txt is published with the dataset
     When I invoke "Download Data Package ZIP" 
     Then a datapackage.zip file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.zip
