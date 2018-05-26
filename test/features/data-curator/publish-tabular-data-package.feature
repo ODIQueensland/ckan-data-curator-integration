@@ -8,7 +8,7 @@ Feature: Publish Tabular Data Package ZIP from Data Curator to CKAN
   RULES
   =====
 
-  - The ability to publish to an open data portal is secured through an API key
+  - The ability to publish to CKAN is secured through an API key
   - The API key must not be stored and must be kept secret
   - The preferred Open Data Portal and API URL may be stored in Preferences
   - Publish to CKAN using the [CKAN extension](https://github.com/ckan/ckanext-datapackager) that supports uploading data packages through an API
@@ -26,9 +26,9 @@ Feature: Publish Tabular Data Package ZIP from Data Curator to CKAN
     When I invoke "Publish Data Package" 
     Then a prompt for the filename and location of the datapackage.zip file, portal type, url and API key should be displayed
     And any preference settings should be defaulted into the input values
-    And the selected file should be to published to the open data portal 
-    And the Data Package metadata properties in the datapackage.zip should be mapped to the CKAN Dataset metadata properties
-    And the Data Resource metadata properties in the datapackage.zip should be mapped to the CKAN Resource metadata properties 
+    And the selected file should be to published to the CKAN 
+    And the Tabular Data Package metadata properties in the datapackage.zip should be mapped to the CKAN Dataset metadata properties
+    And the Tabular Data Resource metadata properties in the datapackage.zip should be mapped to the CKAN Resource metadata properties 
     And the Data Resources in the datapackage.zip CKAN should be published as CKAN Data Resources
     And the Table Schemas for each resource in the datapackage.zip should be stored in CKAN
     And the CSV Dialects for each resource in the datapackage.zip should be stored in CKAN

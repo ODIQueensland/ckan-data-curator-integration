@@ -63,7 +63,7 @@ Feature: Open a Tabular Data Package JSON in Data Curator using a CKAN URL
   Scenario: Open an invalid datapackage.json from a URL
     Given Data Curator is open
     When "Open Data Package" is invoked
-    And an invalid datapackage.json file at a URL is selected
+    And an invalid tabular datapackage.json file at a URL is selected
     Then an error message should be displayed 
     
   Scenario: datapackage.json URL is invalid
