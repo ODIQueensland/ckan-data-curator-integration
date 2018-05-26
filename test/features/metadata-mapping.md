@@ -1,7 +1,8 @@
 # Metadata mapping
 
-Data Package mapping
---------------------
+## CKAN to Frictionless Data
+
+### CKAN Dataset to Data Package mapping
 
   | CKAN Dataset metadata property | Data Package metadata property | notes                        |
   | ------------------------------ | ------------------------------ | ---------------------------- |
@@ -10,11 +11,12 @@ Data Package mapping
   |                                | licenses name                  |                              |
   |                                | licenses path                  |                              |
   |                                | licenses title                 |                              |
-  |                                | profile                        |                              |
-  |                                | title                          | default value `data-package` |
+  |                                | profile                        | default value `data-package` |
+  |                                | title                          |                              |
   |                                | description                    |                              |
   |                                | homepage                       |                              |
   | not available                  | sources                        |                              |
+  | contributors extra             | contributors array             | use extra if available       |
   | author                         | contributors title             |                              |
   | author                         | contributors role              | default value `author`       |
   | maintainer                     | contributors title             |                              |
@@ -22,9 +24,11 @@ Data Package mapping
   |                                | keywords                       |                              |
   |                                | image                          |                              |
   |                                | created                        |                              |
+  | other metadata                 | not available                  | store?                       |
+  
 
-Data Resource mapping
----------------------
+
+### CKAN Resource to Data Resource mapping
 
   | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
   | ------------------------------- | ------------------------------- | -------------------------------------- |
@@ -34,7 +38,7 @@ Data Resource mapping
   |                                 | title                           |                                        |
   |                                 | description                     |                                        |
   |                                 | format                          |                                        |
-  |                                 | mediatype                       |                                        |
+  | mimetype                        | mediatype                       |                                        |
   |                                 | encoding                        |                                        |
   |                                 | bytes                           |                                        |
   |                                 | hash                            |                                        |
@@ -44,8 +48,7 @@ Data Resource mapping
   | not available                   | licenses title                  |                                        |
 
 
-Tabular Data Package mapping
-----------------------------
+### CKAN Dataset to Tabular Data Package mapping
 
   | CKAN Dataset metadata property | Tabular Data Package metadata property | notes                                |
   | ------------------------------ | -------------------------------------- | ------------------------------------ |
@@ -54,8 +57,8 @@ Tabular Data Package mapping
   |                                | licenses name                          |                                      |
   |                                | licenses path                          |                                      |
   |                                | licenses title                         |                                      |
-  |                                | profile                                |                                      |
-  |                                | title                                  | default value `tabular-data-package` |
+  |                                | profile                                | default value `tabular-data-package` |
+  |                                | title                                  |                                      |
   |                                | description                            |                                      |
   |                                | homepage                               |                                      |
   | not available                  | sources                                |                                      |
@@ -68,8 +71,7 @@ Tabular Data Package mapping
   |                                | created                                |                                      |
 
 
-Tabular Data Resource mapping
------------------------------
+### CKAN Resource to Tabular Data Resource mapping
   
   | CKAN Resource metadata property | Tabular Data Resource metadata property | notes                                  |
   | ------------------------------- | --------------------------------------- | -------------------------------------- |
@@ -79,7 +81,7 @@ Tabular Data Resource mapping
   |                                 | title                                   |                                        |
   |                                 | description                             |                                        |
   |                                 | format                                  | `csv` or `tsv`                         |
-  |                                 | mediatype                               | `text/csv` or                          |
+  | mimetype                        | mediatype                               | `text/csv` or                          |
   |                                 | encoding                                | default `UTF-8` ?                      |
   |                                 | bytes                                   |                                        |
   |                                 | hash                                    |                                        |
@@ -87,3 +89,43 @@ Tabular Data Resource mapping
   | not available                   | licenses name                           |                                        |
   | not available                   | licenses path                           |                                        |
   | not available                   | licenses title                          |                                        |
+
+## Frictionless Data to CKAN 
+
+
+### Data Package to CKAN Dataset mapping
+
+| Data Package metadata property | CKAN Dataset metadata property | notes                                        |
+| ------------------------------ | ------------------------------ | -------------------------------------------- |
+| name                           |                                |                                              |
+| id                             |                                |                                              |
+| licenses                       | extra                          | see https://github.com/frictionlessdata/ckanext-datapackager/issues/62 |
+| licenses name                  | license_id                     |                                              |
+| licenses path                  |                                |                                              |
+| licenses title                 |                                |                                              |
+| profile                        | extra                          |  default value `data-package`                |
+| title                          |                                |                                              |
+| description                    |                                |                                              |
+| homepage                       |                                |                                              |
+| sources                        | extra                          |                                              |
+| contributors                   | extra                          | Store the whole contributors object as extra |
+| contributors title             | author                         |                                              |
+| contributors role `author`     |                                | First contributor with role author           |
+| contributors title             | maintainer                     |                                              |
+| contributors role `maintainer` |                                | First contributor with role maintainer       |
+| keywords                       |                                |                                              |
+| image                          |                                |                                              |
+| created                        |                                |                                              |
+                 
+                 
+### Data Resource to CKAN Resource mapping
+
+  todo
+
+### Tabular Data Package to CKAN Dataset  mapping
+
+  todo
+
+### Tabular Data Resource mapping to CKAN Resource 
+  
+  todo
