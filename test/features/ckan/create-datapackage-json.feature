@@ -43,13 +43,13 @@ Feature: Create new Data Package JSON using CKAN
 
   Data Resource mapping
   ---------------------
-    
+  
     | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
     | ------------------------------- | ------------------------------- | -------------------------------------- |
     |                                 | path                            | the url the ckan resource is stored at |
     |                                 | name                            |                                        |
-    |                                 | profile                         | default value `data-package`           |
-    |                                 | title                           | default value `data-resource`          |
+    |                                 | profile                         | default value `data-resource`          |
+    |                                 | title                           |                                        |
     |                                 | description                     |                                        |
     |                                 | format                          |                                        |
     |                                 | mediatype                       |                                        |
@@ -60,9 +60,6 @@ Feature: Create new Data Package JSON using CKAN
     |                                 | licenses name                   |                                        |
     |                                 | licenses path                   |                                        |
     |                                 | licenses title                  |                                        |
-    
-    
-    
 
   QUESTIONS
   =========
