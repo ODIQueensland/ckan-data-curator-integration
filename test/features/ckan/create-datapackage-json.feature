@@ -18,6 +18,9 @@ Feature: Create new Data Package JSON using CKAN
       - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
       - non-data resources such as README.md or README.txt files
   
+  Data Package mapping
+  --------------------
+  
     | CKAN Dataset metadata property | Data Package metadata property | notes                        |
     | ------------------------------ | ------------------------------ | ---------------------------- |
     |                                | name                           |                              |
@@ -38,6 +41,8 @@ Feature: Create new Data Package JSON using CKAN
     |                                | image                          |                              |
     |                                | created                        |                              |
 
+    Data Resource mapping
+    --------------------
     
     | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
     | ------------------------------- | ------------------------------- | -------------------------------------- |
