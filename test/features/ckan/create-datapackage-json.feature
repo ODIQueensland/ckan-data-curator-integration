@@ -80,4 +80,5 @@ Feature: Create new Data Package JSON using CKAN
     Then a datapackage.json file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
     And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
-    And CKAN Resources 
+    And CKAN Resources that are not data should not be included in the datapackage.json
+    And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json
