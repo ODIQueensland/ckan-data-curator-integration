@@ -48,4 +48,4 @@ Tags
 We use @tags to help organise and search for tests:
 
 - @draft tests
-- @backlog for features not in our [release plans](https://github.com/ODIQueensland/ckan-data-curator-integration/milestone/10)
+- @backlog for [features not in our release plans](https://github.com/ODIQueensland/ckan-data-curator-integration/milestone/10)
