@@ -41,8 +41,8 @@ Feature: Create new Data Package JSON using CKAN
     |                                | image                          |                              |
     |                                | created                        |                              |
 
-    Data Resource mapping
-    --------------------
+  Data Resource mapping
+  ---------------------
     
     | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
     | ------------------------------- | ------------------------------- | -------------------------------------- |
