@@ -2,8 +2,8 @@
 
 Feature: Update Data Package JSON using CKAN
   As a Data Publisher  
-  I want to update a datapackage.json file from dataset, resources and metadata I've changed in CKAN 
-  So that data consumers can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data
+  I want to update a datapackage.json file from dataset, resources and metadata I've changed in CKAN  
+  So that data consumers can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  
 
   RULES
   =====
