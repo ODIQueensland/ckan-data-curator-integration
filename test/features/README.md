@@ -45,7 +45,7 @@ Rules for Then
 Tags
 ====
 
-We use @tags to help organise and search for tests:
+We use @tags to help organise and search for tests, e.g.
 
-- @draft tests
-- @backlog for [features not in our release plans](https://github.com/ODIQueensland/ckan-data-curator-integration/milestone/10)
+- [@draft](https://app.cucumber.pro/projects/ckan-data-curator-integration/search/branch/master?q=%40draft) tests
+- [@backlog](https://app.cucumber.pro/projects/ckan-data-curator-integration/search/branch/master?q=%40backlog) for [features not in our release plans](https://github.com/ODIQueensland/ckan-data-curator-integration/milestone/10)
