@@ -57,9 +57,9 @@ Feature: Create new Data Package JSON using CKAN
     |                                 | bytes                           |                                        |
     |                                 | hash                            |                                        |
     | not available                   | sources                         |                                        |
-    |                                 | licenses name                   |                                        |
-    |                                 | licenses path                   |                                        |
-    |                                 | licenses title                  |                                        |
+    | not available                   | licenses name                   |                                        |
+    | not available                   | licenses path                   |                                        |
+    | not available                   | licenses title                  |                                        |
 
   QUESTIONS
   =========
