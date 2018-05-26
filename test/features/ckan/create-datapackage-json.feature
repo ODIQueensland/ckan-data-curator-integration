@@ -2,7 +2,7 @@
 
 Feature: Create new Data Package JSON using CKAN
   As a Data Publisher  
-  I want to create a datapackage.json file from the resources and metadata I have added to CKAN for the first time  
+  I want to create a datapackage.json file from the dataset, resources and metadata I have added to CKAN for the first time  
   So that data consumers can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  
 
   RULES
