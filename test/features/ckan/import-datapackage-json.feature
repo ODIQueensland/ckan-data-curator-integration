@@ -16,7 +16,12 @@ Feature: Import a Data Package JSON to CKAN
   - The datapackage.json does not contain:
     - [table schemas](https://frictionlessdata.io/specs/table-schema/)
     - [CSV dialects](https://frictionlessdata.io/specs/csv-dialect/) in-line 
-    - non-data resources such as README.md or README.txt files
+    - non-data resources such as README.md or README.txt files that aren't defined as data resources in the data package
+    
+  QUESTIONS
+  =========
+  
+  - 
 
   Scenario: Import a valid Data Package JSON to CKAN
     Given a valid datapackage.json 

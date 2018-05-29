@@ -1,7 +1,5 @@
 # Metadata mapping
 
-@todo
-
 ## CKAN to Frictionless Data
 
 ### CKAN Dataset to Data Package mapping
@@ -91,31 +89,52 @@
 
 ### Data Package to CKAN Dataset mapping
 
-| Data Package metadata property | CKAN Dataset metadata property | notes                                        |
-| ------------------------------ | ------------------------------ | -------------------------------------------- |
-| name                           |                                |                                              |
-| id                             |                                |                                              |
-| licenses                       | extra                          | see https://github.com/frictionlessdata/ckanext-datapackager/issues/62 |
-| licenses name                  | license_id                     |                                              |
-| licenses path                  |                                |                                              |
-| licenses title                 |                                |                                              |
-| profile                        | extra                          |  default value `data-package`                |
-| title                          |                                |                                              |
-| description                    |                                |                                              |
-| homepage                       |                                |                                              |
-| sources                        | extra                          |                                              |
-| contributors                   | extra                          | Store the whole contributors object as extra |
-| contributors title             | author                         |                                              |
-| contributors role `author`     |                                | First contributor with role author           |
-| contributors title             | maintainer                     |                                              |
-| contributors role `maintainer` |                                | First contributor with role maintainer       |
-| keywords                       |                                |                                              |
-| image                          |                                |                                              |
-| created                        |                                |                                              |
+  | Data Package metadata property | CKAN Dataset metadata property | notes                                        |
+  | ------------------------------ | ------------------------------ | -------------------------------------------- |
+  | name                           |                                |                                              |
+  | id                             |                                |                                              |
+  | licenses                       | extra                          | see https://github.com/frictionlessdata/ckanext-datapackager/issues/62 |
+  | licenses name                  | license_id                     |                                              |
+  | licenses path                  |                                |                                              |
+  | licenses title                 |                                |                                              |
+  | profile                        | extra                          |  default value `data-package`                |
+  | title                          |                                |                                              |
+  | description                    |                                |                                              |
+  | homepage                       |                                |                                              |
+  | sources                        | extra                          |                                              |
+  | contributors                   | extra                          | Store the whole contributors object as extra |
+  | contributors title             | author                         |                                              |
+  | contributors role `author`     |                                | First contributor with role author           |
+  | contributors title             | maintainer                     |                                              |
+  | contributors role `maintainer` |                                | First contributor with role maintainer       |
+  | keywords                       |                                |                                              |
+  | image                          |                                |                                              |
+  | created                        |                                |                                              |
                             
 ### Data Resource to CKAN Resource mapping
 
-  todo
+  | Data Resource metadata property | CKAN Resource metadata property | notes                                            |
+  | ------------------------------- | ------------------------------- | ------------------------------------------------ |
+  | path                            |                                 |             |
+  | data                            |                                 | uploading of in-line data not supported          |
+  | name                            |                                 |                                                  |
+  | profile                         | profile extra                   | default value `data-resource`                    |
+  | title                           |                                 |                                                  |
+  | description                     |                                 |                                                  |
+  | format                          |                                 |                                                  |
+  | mediatype                       | mimetype                        |                                                  |
+  | encoding                        |                                 |                                                  |
+  | bytes                           |                                 |                                                  |
+  | hash                            |                                 |                                                  |
+  | sources array                   | sources extra                   |                                                  |
+  | sources title                   |                                 |                                                  |
+  | sources path                    |                                 |                                                  |
+  | sources email                   |                                 |                                                  |
+  | licenses array                  |                                 | license at resource level not supported          |
+  | licenses name                   | not available                   |                                                  |
+  | licenses path                   | not available                   |                                                  |
+  | licenses title                  | not available                   |                                                  |
+  | schema                          |                                 | uploading of schema at url or path not supported |
 
 ### Tabular Data Package to CKAN Dataset  mapping
 
