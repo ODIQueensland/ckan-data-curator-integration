@@ -134,19 +134,9 @@
 
   | Tabular Data Resource metadata property | CKAN Resource metadata property | notes                                  |
   | --------------------------------------- | ------------------------------- | -------------------------------------- |
-  | path                                    |                                 | the url the ckan resource is stored at |
-  | name                                    |                                 |                                        |
-  | profile                                 |                                 | default value `tabular-data-resource`  |
-  | title                                   |                                 |                                        |
-  | description                             |                                 |                                        |
+  | profile                                 | profile extra                   | default value `tabular-data-resource`  |
   | format                                  |                                 | `csv` or `tsv`                         |
-  | mediatype                               | mimetype                        | `text/csv` or                          |
+  | mediatype                               | mimetype                        | `text/csv`                             |
   | encoding                                |                                 | default `UTF-8` ?                      |
-  | bytes                                   |                                 |                                        |
-  | hash                                    |                                 |                                        |
-  | sources                                 |                                 |                                        |
-  | licenses name                           |                                 | license not stored at resource level   |
-  | licenses path                           |                                 |                                        |
-  | licenses title                          |                                 |                                        |
   | schema                                  |                                 |                                        |
   | dialect                                 |                                 |                                        |
