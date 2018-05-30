@@ -27,6 +27,8 @@
   
 ### CKAN Resource to Data Resource mapping
 
+  All resources added to data package (tbc?)
+
   | CKAN Resource metadata property | Data Resource metadata property | notes                                  |
   | ------------------------------- | ------------------------------- | -------------------------------------- |
   |                                 | path                            | the url the ckan resource is stored at |
@@ -40,50 +42,32 @@
   |                                 | bytes                           |                                        |
   |                                 | hash                            |                                        |
   | not available                   | sources                         |                                        |
-  | not available                   | licenses name                   |                                        |
+  | not available                   | licenses name                   | license not stored at resource level   |
   | not available                   | licenses path                   |                                        |
   | not available                   | licenses title                  |                                        |
 
 ### CKAN Dataset to Tabular Data Package mapping
 
+  Same as [CKAN Dataset to Data Package mapping](#ckan-dataset-to-data-package-mapping), except:
+  
   | CKAN Dataset metadata property | Tabular Data Package metadata property | notes                                |
   | ------------------------------ | -------------------------------------- | ------------------------------------ |
-  |                                | name                                   |                                      |
-  |                                | id                                     |                                      |
-  |                                | licenses name                          |                                      |
-  |                                | licenses path                          |                                      |
-  |                                | licenses title                         |                                      |
   |                                | profile                                | default value `tabular-data-package` |
-  |                                | title                                  |                                      |
-  |                                | description                            |                                      |
-  |                                | homepage                               |                                      |
-  | not available                  | sources                                |                                      |
-  | author                         | contributors title                     |                                      |
-  | author                         | contributors role                      | default value `author`               |
-  | maintainer                     | contributors title                     |                                      |
-  | maintainer                     | contributors role                      | default value `maintainer`           |
-  |                                | keywords                               |                                      |
-  |                                | image                                  |                                      |
-  |                                | created                                |                                      |
 
 ### CKAN Resource to Tabular Data Resource mapping
-  
+
+  Same as [CKAN Resource to Data Resource mapping](#ckan-resource-to-data-resource-mapping), except:
+
+  Only tabular data resources (i.e. .csv or .tsv with a schema) added to data package.
+
   | CKAN Resource metadata property | Tabular Data Resource metadata property | notes                                  |
   | ------------------------------- | --------------------------------------- | -------------------------------------- |
-  |                                 | path                                    | the url the ckan resource is stored at |
-  |                                 | name                                    |                                        |
   |                                 | profile                                 | default value `tabular-data-resource`  |
-  |                                 | title                                   |                                        |
-  |                                 | description                             |                                        |
   |                                 | format                                  | `csv` or `tsv`                         |
-  | mimetype                        | mediatype                               | `text/csv` or                          |
+  | mimetype                        | mediatype                               | `text/csv`                             |
   |                                 | encoding                                | default `UTF-8` ?                      |
-  |                                 | bytes                                   |                                        |
-  |                                 | hash                                    |                                        |
-  | not available                   | sources                                 |                                        |
-  | not available                   | licenses name                           |                                        |
-  | not available                   | licenses path                           |                                        |
-  | not available                   | licenses title                          |                                        |
+  | schema extra                    | schema                                  |                                        |
+  | dialect extra                   | dialect                                 |                                        |
 
 ## Frictionless Data to CKAN 
 
@@ -101,8 +85,8 @@
   | title                          |                                |                                              |
   | description                    |                                |                                              |
   | homepage                       |                                |                                              |
-  | sources                        | extra                          |                                              |
-  | contributors                   | extra                          | Store the whole contributors object as extra |
+  | sources                        | sources extra                  |                                              |
+  | contributors                   | contributors extr              | Store the whole contributors object as extra |
   | contributors title             | author                         |                                              |
   | contributors role `author`     |                                | First contributor with role author           |
   | contributors title             | maintainer                     |                                              |
@@ -130,7 +114,7 @@
   | sources title                   |                                 |                                                  |
   | sources path                    |                                 |                                                  |
   | sources email                   |                                 |                                                  |
-  | licenses array                  |                                 | license at resource level not supported          |
+  | licenses array                  | licenses extra                  | license at resource level not supported          |
   | licenses name                   | not available                   |                                                  |
   | licenses path                   | not available                   |                                                  |
   | licenses title                  | not available                   |                                                  |
@@ -138,8 +122,31 @@
 
 ### Tabular Data Package to CKAN Dataset  mapping
 
-  todo
+  Same as [Data Package to CKAN Dataset mapping](#data-package-to-ckan-dataset-mapping), except:
+  
+  | Tabular Data Package metadata property | CKAN Dataset metadata property | notes                                |
+  | -------------------------------------- | ------------------------------ | ------------------------------------ |
+  | profile                                | profile extra                  | default value `tabular-data-package` |
 
 ### Tabular Data Resource mapping to CKAN Resource 
-  
-  todo
+
+  [Same as Data Resource to CKAN Resource mapping](#data-resource-to-ckan-resource-mapping), except:
+
+  | Tabular Data Resource metadata property | CKAN Resource metadata property | notes                                  |
+  | --------------------------------------- | ------------------------------- | -------------------------------------- |
+  | path                                    |                                 | the url the ckan resource is stored at |
+  | name                                    |                                 |                                        |
+  | profile                                 |                                 | default value `tabular-data-resource`  |
+  | title                                   |                                 |                                        |
+  | description                             |                                 |                                        |
+  | format                                  |                                 | `csv` or `tsv`                         |
+  | mediatype                               | mimetype                        | `text/csv` or                          |
+  | encoding                                |                                 | default `UTF-8` ?                      |
+  | bytes                                   |                                 |                                        |
+  | hash                                    |                                 |                                        |
+  | sources                                 |                                 |                                        |
+  | licenses name                           |                                 | license not stored at resource level   |
+  | licenses path                           |                                 |                                        |
+  | licenses title                          |                                 |                                        |
+  | schema                                  |                                 |                                        |
+  | dialect                                 |                                 |                                        |
