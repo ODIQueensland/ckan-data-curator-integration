@@ -3,7 +3,20 @@
 Feature: Import a Tabular Data Package JSON to CKAN
   As a Data Publisher  
   I want to upload a tabular datapackage.json to CKAN  
-  So that I can quickly share my data with data consumers  
+  So that I can quickly share my data with data consumers 
+  
+  RULES
+  =====
+  
+  - The [data resources must be stored at a url](https://frictionlessdata.io/specs/data-resource/#path-data-in-files)
+  - A datapackage.json will not be imported if the data is:
+    - at a [local path](https://frictionlessdata.io/specs/data-resource/#path-data-in-files)
+    - [in-line data](https://frictionlessdata.io/specs/data-resource/#data-inline-data) 
+    
+  NOTES
+  =====
+  
+  - This is not a requirement for Data Curator integration to CKAN but is needed for supporting current import options [see ckanext-datapackager #40](https://github.com/frictionlessdata/ckanext-datapackager/issues/40)  
 
   Scenario: Import a valid Tabular Data Package JSON to CKAN
     Given a valid tabular datapackage.json 
