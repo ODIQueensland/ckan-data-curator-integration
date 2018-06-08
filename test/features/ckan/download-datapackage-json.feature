@@ -1,9 +1,9 @@
 @draft @v0.2.0
 
 Feature: Download new Data Package JSON using CKAN
-  As a Data Publisher  
-  I want to create a datapackage.json file from the dataset, its resources and metadata in CKAN  
-  So that data consumers can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  
+  As a Data Consumer  
+  I want to download a datapackage.json file representing the dataset, its resources and metadata in CKAN  
+  So that I can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  
 
   RULES
   =====
