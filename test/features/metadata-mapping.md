@@ -6,21 +6,21 @@
 
   | CKAN Dataset metadata property | Data Package metadata property | notes                        |
   | ------------------------------ | ------------------------------ | ---------------------------- |
-  |                                | name                           |                              |
+  | name                           | name                           |                              |
   |                                | id                             |                              |
   | license extra                  | licenses array                 | use extra if available       |
   | license_id                     | licenses array                 | construct array              |
   | profile extra                  | profile                        | use extra if available or default `data-package` |
   |                                | title                          |                              |
-  |                                | description                    |                              |
-  |                                | homepage                       |                              |
+  | notes                          | description                    |                              |
+  | ckan_url                       | homepage                       |                              |
   | not available                  | sources                        |                              |
   | contributors extra             | contributors array             | use extra if available       |
   | author                         | contributors title             |                              |
   | author                         | contributors role              | default value `author`       |
   | maintainer                     | contributors title             |                              |
   | maintainer                     | contributors role              | default value `maintainer`   |
-  |                                | keywords                       |                              |
+  | tag names                      | keywords                       |                              |
   |                                | image                          |                              |
   |                                | created                        |                              |
   | other metadata                 | not available                  | store?                       |
@@ -35,12 +35,12 @@
   |                                 | name                            |                                        |
   | profile extra                   | profile                         | default value `data-resource`          |
   |                                 | title                           |                                        |
-  |                                 | description                     |                                        |
-  |                                 | format                          |                                        |
+  | description                     | description                     |                                        |
+  | format                          | format                          |                                        |
   | mimetype                        | mediatype                       |                                        |
   |                                 | encoding                        |                                        |
   |                                 | bytes                           |                                        |
-  |                                 | hash                            |                                        |
+  | hash                            | hash                            |                                        |
   | not available                   | sources                         |                                        |
   | not available                   | licenses name                   | license not stored at resource level   |
   | not available                   | licenses path                   |                                        |
