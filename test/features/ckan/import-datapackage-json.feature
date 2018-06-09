@@ -21,7 +21,7 @@ Feature: Import a Data Package JSON file to CKAN
     - non-data resources such as README.md or README.txt files that aren't defined as data resources in the data package
     - data resources:
       - at a [local path](https://frictionlessdata.io/specs/data-resource/#path-data-in-files)
-      - in [in-line data](https://frictionlessdata.io/specs/data-resource/#data-inline-data) 
+      - as [in-line data](https://frictionlessdata.io/specs/data-resource/#data-inline-data) 
 
   Scenario: Import a valid Data Package JSON to CKAN
     Given a valid datapackage.json 
