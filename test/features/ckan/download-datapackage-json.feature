@@ -2,7 +2,7 @@
 
 Feature: Download Data Package JSON file from CKAN
   As a Data Consumer  
-  I want to download a datapackage.json file representing the dataset, its resources and metadata in CKAN  
+  I want to download a datapackage.json file representing the dataset, its resources and metadata from CKAN  
   So that I can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  
 
   RULES
@@ -21,13 +21,13 @@ Feature: Download Data Package JSON file from CKAN
   QUESTIONS
   =========
   
-  - How do you determine if a resource is/isn't a data resource?
-  - How are additional CKAN metadata properties handled - drop or include?
+  - How do you determine if a resource is/isn't a data resource? Only include resources of certain formats (e.g. drop .pdf?)
+  - How are additional CKAN metadata properties handled - drop or include? (Scenarios currently written as dropping metadata)
   
   NOTES
   =====
   
-  - In docs, see [Publish a data package to CKAN for the first time](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#2-publish-a-data-package-to-ckan-for-the-first-time)
+  - See [Publish a data package to CKAN for the first time](https://github.com/ODIQueensland/ckan-data-curator-integration/tree/master/docs#2-publish-a-data-package-to-ckan-for-the-first-time)
 
   Scenario: Download data package JSON after CKAN dataset created 
     Given a dataset has been published in CKAN
@@ -36,6 +36,7 @@ Feature: Download Data Package JSON file from CKAN
     Then a datapackage.json file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
     And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And CKAN Resources that are data should be referenced using a URL
     And CKAN Resources that are not data should not be included in the datapackage.json
     And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json
   
@@ -44,8 +45,9 @@ Feature: Download Data Package JSON file from CKAN
     And one or more dataset metadata properties have been changed 
     When I invoke "Download Data Package" 
     Then a datapackage.json file should be downloaded
-    And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
+    And the new CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
     And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And CKAN Resources that are data should be referenced using a URL
     And CKAN Resources that are not data should not be included in the datapackage.json
     And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json
 
@@ -55,7 +57,8 @@ Feature: Download Data Package JSON file from CKAN
     When I invoke "Download Data Package" 
     Then a datapackage.json file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
-    And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And the new CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And CKAN Resources that are data should be referenced using a URL
     And CKAN Resources that are not data should not be included in the datapackage.json
     And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json
 
@@ -66,6 +69,7 @@ Feature: Download Data Package JSON file from CKAN
     Then a datapackage.json file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
     And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And the current and updated CKAN Resources that are data should be referenced using a URL
     And CKAN Resources that are not data should not be included in the datapackage.json
     And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json    
 
@@ -76,6 +80,7 @@ Feature: Download Data Package JSON file from CKAN
     Then a datapackage.json file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
     And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And the current and new CKAN Resources that are data should be referenced using a URL
     And CKAN Resources that are not data should not be included in the datapackage.json
     And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json
 
@@ -86,5 +91,7 @@ Feature: Download Data Package JSON file from CKAN
     Then a datapackage.json file should be downloaded
     And the CKAN Dataset metadata properties should be mapped to the Data Package metadata properties in the datapackage.json
     And the CKAN Resource metadata properties should be mapped to the Data Resource metadata properties in the datapackage.json
+    And the deleted CKAN Resource metadata properties should not be in the data package be in the datapackage.json
+    And the current CKAN Resources that are data should be referenced using a URL
     And CKAN Resources that are not data should not be included in the datapackage.json
     And CKAN metadata that is not specified in the Frictionless Data specification should not be included as metadata properties in the datapackage.json

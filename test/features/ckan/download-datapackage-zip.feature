@@ -2,7 +2,7 @@
 
 Feature: Download new Data Package ZIP from CKAN
   As a Data Consumer  
-  I want to download a datapackage.zip file representing the dataset, its resources and metadata in CKAN  
+  I want to download a datapackage.zip file representing the dataset, its resources and metadata from CKAN  
   So that I can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  
 
   RULES
