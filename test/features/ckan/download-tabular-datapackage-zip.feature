@@ -1,6 +1,6 @@
 @draft @v0.6.0 @todo
 
-Feature: Download new Tabular Data Package ZIP using CKAN
+Feature: Download new Tabular Data Package ZIP from CKAN
   As a Data Consumer  
   I want to download a tabular datapackage.zip file representing the dataset, its resources and metadata in CKAN  
   So that data consumers can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  

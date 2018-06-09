@@ -1,6 +1,6 @@
 @draft @v0.2.0
 
-Feature: Download new Data Package JSON using CKAN
+Feature: Download Data Package JSON file from CKAN
   As a Data Consumer  
   I want to download a datapackage.json file representing the dataset, its resources and metadata in CKAN  
   So that I can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  

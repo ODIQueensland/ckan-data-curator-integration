@@ -1,6 +1,6 @@
 @draft @v0.2.0
 
-Feature: Import a Data Package JSON to CKAN
+Feature: Import a Data Package JSON file to CKAN
   As a Data Publisher  
   I want to upload a datapackage.json to CKAN  
   So that I can quickly share my data with data consumers  

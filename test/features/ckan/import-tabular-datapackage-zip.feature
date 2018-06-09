@@ -1,6 +1,6 @@
 @draft  @todo
 
-Feature: Import a Tabular Data Package ZIP to CKAN
+Feature: Import a Tabular Data Package ZIP file to CKAN
   As a Data Publisher  
   I want to upload a tabular datapackage.zip to CKAN  
   So that I can quickly share my data with data consumers  

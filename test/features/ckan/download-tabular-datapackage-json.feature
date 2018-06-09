@@ -1,6 +1,6 @@
 @draft @v0.6.0 @todo
 
-Feature: Download Tabular Data Package JSON using CKAN
+Feature: Download Tabular Data Package JSON from CKAN
   As a Data Consumer  
   I want to download a tabular datapackage.json file representing the dataset, its resources and metadata in CKAN  
   So that data consumers can use [Frictionless Data software](https://frictionlessdata.io/software/) to work with the data  

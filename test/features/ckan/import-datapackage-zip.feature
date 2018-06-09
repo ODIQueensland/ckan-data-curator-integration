@@ -1,6 +1,6 @@
 @draft @v0.3.0 @todo
 
-Feature: Import a Data Package ZIP to CKAN
+Feature: Import a Data Package ZIP file to CKAN
   As a Data Publisher  
   I want to upload a datapackage.zip to CKAN  
   So that I can quickly share my data with data consumers  

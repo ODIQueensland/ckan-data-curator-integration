@@ -1,6 +1,6 @@
 @draft @v0.4.0 @todo
 
-Feature: Import a Tabular Data Package JSON to CKAN
+Feature: Import a Tabular Data Package JSON file to CKAN
   As a Data Publisher  
   I want to upload a tabular datapackage.json to CKAN  
   So that I can quickly share my data with data consumers 
