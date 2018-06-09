@@ -22,7 +22,7 @@ Feature: Download Data Package JSON file from CKAN
   =========
   
   - How do you determine if a resource is/isn't a data resource? Only include resources of certain formats (e.g. drop .pdf?)
-  - How are additional CKAN metadata properties handled - drop or include? (Scenarios currently written as dropping metadata)
+  - How are additional CKAN metadata properties handled? - drop or include? (Scenarios currently written as dropping metadata but this may need to be changed to write them as extra properties) 
   
   NOTES
   =====
