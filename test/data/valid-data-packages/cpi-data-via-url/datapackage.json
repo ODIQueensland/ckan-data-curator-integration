@@ -1,0 +1,53 @@
+{
+  "name": "cpi",
+  "title": "Annual Consumer Price Index (CPI)",
+  "description": "Annual Consumer Price Index (CPI) for most countries in the world. Reference year is 2005.",
+  "profile": "data-package",
+  "licenses": [{
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }],
+  "homepage": "http://worldbank.org/",
+  "version": "2.0.0",
+  "sources": [{
+    "title": "World Bank",
+    "path": "http://data.worldbank.org/"
+  }],
+  "contributors": [
+    {
+      "title": "Joe Bloggs",
+      "email": "joe@example.com",
+      "path": "http://www.example.com/bloggs",
+      "role": "author",
+      "organization": "Bloggs and Associates"
+    },
+    {
+      "title": "Mary Shelley",
+      "email": "mshelly@example.com",
+      "role": "maintainer"
+    }
+  ],
+  "keywords": ["CPI", "World", "Consumer Price Index", "Annual Data", "The World Bank"],
+  "resources": [{
+    "path": "https://raw.githubusercontent.com/frictionlessdata/example-data-packages/master/cpi/data/cpi.csv",
+    "name": "cpi",
+    "profile": "data-resource", 
+    "title": "CPI",
+    "description": "Annual Consumer Price Index",
+    "format": "csv",
+    "mediatype": "text/csv",
+    "encoding": "utf-8",
+    "bytes": 1,
+    "hash": "",
+    "sources": [{
+      "title": "The World Bank",
+      "path": "http://data.worldbank.org/indicator/FP.CPI.TOTL"
+    }],
+    "licenses": [{
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }]    
+  }]
+}
