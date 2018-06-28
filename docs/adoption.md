@@ -11,7 +11,7 @@ This document will be updated throughout the project as new requirements emerge.
 ## CKAN 
 
 To support uploading and downloading data packages: 
-- [CKAN](https://ckan.org) v2.7.4 or higher must be installed ([download](https://github.com/ckan/ckan/releases))
+- [CKAN](https://ckan.org) v2.4 or higher must be installed ([download](https://github.com/ckan/ckan/releases))
 - [CKANext-datapackager](https://github.com/frictionlessdata/ckanext-datapackager) extension (version to be determined) must be installed ([download](https://github.com/frictionlessdata/ckanext-datapackager/releases))
 
 ### Research
