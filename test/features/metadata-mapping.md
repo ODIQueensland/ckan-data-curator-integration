@@ -8,22 +8,23 @@
   | ------------------------------ | ------------------------------ | ---------------------------- |
   | name                           | name                           |                              |
   |                                | id                             |                              |
-  | license extra                  | licenses array                 | use extra if available       |
-  | license_id                     | licenses array                 | construct array              |
-  | profile extra                  | profile                        | use extra if available or default `data-package` |
+  | extras->licenses               | licenses                       |                              |
+  | extras->sources                | sources                        |                              |
+  | extras->contributors           | contributors                   |                              |
+  | license_id                     | licenses array                 |                              |
+  | extras->profile                | profile                        |                              |
   |                                | title                          |                              |
   | notes                          | description                    |                              |
   | ckan_url                       | homepage                       |                              |
   | not available                  | sources                        |                              |
-  | contributors extra             | contributors array             | use extra if available       |
   | author                         | contributors title             |                              |
-  | author                         | contributors role              | default value `author`       |
+  |                                | contributors role              | default value `author`       |
   | maintainer                     | contributors title             |                              |
-  | maintainer                     | contributors role              | default value `maintainer`   |
+  |                                | contributors role              | default value `maintainer`   |
   | tag names                      | keywords                       |                              |
   |                                | image                          |                              |
   |                                | created                        |                              |
-  | other metadata                 | not available                  | store?                       |
+  | other metadata                 | not available                  | store without visibility in DC |
   
 ### CKAN Resource to Data Resource mapping
 
@@ -77,16 +78,16 @@
   | ------------------------------ | ------------------------------ | -------------------------------------------- |
   | name                           |                                |                                              |
   | id                             |                                |                                              |
-  | licenses                       | extra                          | see https://github.com/frictionlessdata/ckanext-datapackager/issues/62 |
+  | licenses                       | extras->licenses               | see https://github.com/frictionlessdata/ckanext-datapackager/issues/62 |
   | licenses name                  | license_id                     |                                              |
-  | licenses path                  |                                |                                              |
-  | licenses title                 |                                |                                              |
+  | licenses path                  | license_url                    |                                              |
+  | licenses title                 | license_title                  |                                              |
   | profile                        | extra                          |  default value `data-package`                |
   | title                          |                                |                                              |
   | description                    |                                |                                              |
   | homepage                       |                                |                                              |
-  | sources                        | sources extra                  |                                              |
-  | contributors                   | contributors extr              | Store the whole contributors object as extra |
+  | sources                        | extras -> sources              |  TBD: how is ckan's source url mapped?       |
+  | contributors                   | extras -> contributors         | Store the whole contributors object as extra |
   | contributors title             | author                         |                                              |
   | contributors role `author`     |                                | First contributor with role author           |
   | contributors title             | maintainer                     |                                              |
